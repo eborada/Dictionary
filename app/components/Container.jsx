@@ -15,11 +15,10 @@ var Container = React.createClass({
 		var searchRes = this.state.results;
 		for (var key in Dictionary) {
 			if (Dictionary.hasOwnProperty(key)&& searchTerm === key) {
-				searchRes.push({term: searchTerm, definition: Dictionary[key]});
-				this.setState({results: searchRes.reverse()})
+				searchRes.unshift(searchRes.pop(searchRes.push({term: searchTerm, definition: Dictionary[key]})));
+				this.setState({results: searchRes})
 			}
 		}
-		console.log(this.state.results)
 	},
 	render: function() {
 		var res = this.state.results;
