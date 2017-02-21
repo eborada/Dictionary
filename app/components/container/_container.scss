@@ -1,0 +1,23 @@
+body {
+  background-color: $background;
+  font-family: "Helvetica", serif;
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
+.outer-box {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem;
+}
+
+.text {
+  color: $grey;
+  text-align: center;
+}
+
+h1 {
+  color: $title-color;
+  font-style: italic;
+  text-align: center;
+}

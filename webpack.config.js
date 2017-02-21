@@ -7,11 +7,12 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
-      Container: 'app/components/Container.jsx',
-      SearchForm:'app/components/SearchForm.jsx',
-      Results: 'app/components/Results.jsx'
+      Container: 'app/components/container/Container.jsx',
+      SearchForm:'app/components/searchForm/SearchForm.jsx',
+      Results: 'app/components/results/Results.jsx',
+      applicationStyles: 'app/app.scss'
     },
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.css']
   },
   module: {
     loaders: [
